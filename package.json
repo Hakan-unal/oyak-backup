@@ -1,0 +1,80 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "./libs",
+    "./apps/*"
+  ],
+  "scripts": {
+    "start:advice": "yarn workspace practical-advice dev",
+    "start:analysis": "yarn workspace practical-analysis dev",
+    "start:portfolio": "yarn workspace practical-portfolio dev",
+    "build:advice": "yarn workspace practical-advice build",
+    "build:analysis": "yarn workspace practical-analysis build",
+    "build:portfolio": "yarn workspace practical-portfolio build",
+    "build:test:advice": "yarn workspace practical-advice build-test-env",
+    "build:test:analysis": "yarn workspace practical-analysis build-test-env",
+    "build:test:portfolio": "yarn workspace practical-portfolio build-test-env",
+    "precommit": "lint-staged",
+    "lint": "next lint",
+    "typecheck": "tsc",
+    "typecheck:watch": "tsc --watch --showConfig",
+    "prepare": "husky install",
+    "codegen": "cd scripts && ./codegen.sh"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "stylelint",
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "concurrently": "7.6.0",
+    "babel-plugin-module-resolver": "5.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "3.5.3",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "husky": "^8.0.3",
+    "next": "13.1.4",
+    "react": "18.2.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "prettier-eslint": "^15.0.1",
+    "stylelint": "^14.0.1",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^4.9.4",
+    "url-loader": "^4.1.1",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.13",
+    "tailwindcss": "^3.2.4",
+    "postcss-import" : "15.1.0"
+  }
+}

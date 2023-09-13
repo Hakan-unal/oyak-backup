@@ -1,0 +1,34 @@
+{
+  "presets": [],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": [
+          {
+            "@libs": "./libs"
+          },
+          {
+            "prac-advice": "./apps/practical-advice"
+          },
+          {
+            "prac-analysis": "./apps/practical-analysis"
+          },
+          {
+            "prac-portfolio": "./apps/practical-portfolio"
+          }
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".ttf"
+        ]
+      },
+    ],
+  ],
+}

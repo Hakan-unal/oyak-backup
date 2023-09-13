@@ -1,0 +1,25 @@
+#technicalIndicators .ag-header {
+  height: 48px !important;
+  min-height: 48px !important;
+}
+
+#technicalIndicators .ag-header-row-column {
+  display: none;
+  top: 0;
+}
+
+#technicalIndicators .ag-layout-auto-height .ag-center-cols-clipper,
+#technicalIndicators .ag-layout-auto-height .ag-center-cols-container,
+#technicalIndicators .ag-layout-print .ag-center-cols-clipper,
+#technicalIndicators .ag-layout-print .ag-center-cols-container,
+#technicalIndicators .ag-row {
+  min-height: 80px !important;
+}
+
+#technicalIndicators .ag-cell {
+  padding: 0;
+}
+
+#technicalIndicators .ag-body {
+  border-top: solid 1px theme(colors.primary.dark);
+}

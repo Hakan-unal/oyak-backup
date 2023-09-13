@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "checkJs": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "removeComments": true,
+    "noEmit": false,
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "composite": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@root": [
+        "./"
+      ],
+      "@libs/*": [
+        "libs/*"
+      ],
+      "prac-advice/*": [
+        "apps/practical-advice/*"
+      ],
+      "prac-analysis/*": [
+        "apps/practical-analysis/*"
+      ],
+      "prac-portfolio/*": [
+        "apps/practical-portfolio/*"
+      ],
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

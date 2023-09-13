@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 100;
+    src: url('../public/fonts/Roboto-Thin.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url('../public/fonts/Roboto-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../public/fonts/Roboto-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../public/fonts/Roboto-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../public/fonts/Roboto-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 900;
+    src: url('../public/fonts/Roboto-Black.ttf');
+  }
+}
+
+@layer components {
+  .text-single-line {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .multine-ellipsis {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ag-root {
+  --ag-header-background-color: theme(colors.basic.two);
+  --ag-borders: solid 1px;
+  --ag-border-color: theme(colors.basic.three);
+  --ag-row-border-color: theme(colors.basic.three);
+  --ag-row-hover-color: theme(colors.basic.two);
+  --ag-cell-horizontal-border: solid theme(colors.basic.three);
+}
+
+.ag-header-row,
+.ag-header-row-group {
+  min-height: 48px;
+  border-bottom: solid 1px theme(colors.primary.dark);
+}
+
+.ag-row {
+  min-height: 40px;
+}
+
+.ag-layout-auto-height .ag-center-cols-clipper,
+.ag-layout-auto-height .ag-center-cols-container,
+.ag-layout-print .ag-center-cols-clipper,
+.ag-layout-print .ag-center-cols-container {
+  min-height: 40px !important;
+}
+
+.ag-cell {
+  font-size: 12px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.ag-cell-label-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ag-header-cell,
+.ag-header-group-cell {
+  font-size: 12px;
+  font-weight: 700;
+  color: theme(colors.basic.six);
+  border-right: 1px solid theme(colors.basic.three);
+}
+
+.ag-cell-focus {
+  border-color: transparent !important;
+  border-right: 1px solid theme(colors.basic.three) !important;
+}
+
+.ag-row-focus {
+  border-color: theme(colors.basic.three) !important;
+}

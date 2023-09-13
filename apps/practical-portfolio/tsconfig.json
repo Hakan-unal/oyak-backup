@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "../.."
+  },
+  "references": [
+    {
+      "path": "../../libs"
+    },
+    {
+      "path": "../../"
+    }
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}

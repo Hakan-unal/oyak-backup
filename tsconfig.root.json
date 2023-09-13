@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist"
+  },
+  "files": [],
+  "references": [
+    { "path": "./" },
+    { "path": "./libs" },
+    { "path": "./apps/practical-advice" },
+    { "path": "./apps/practical-analysis" },
+    { "path": "./apps/practical-portfolio" }
+  ],
+  "exclude": ["dist"]
+}

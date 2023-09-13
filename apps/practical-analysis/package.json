@@ -1,0 +1,50 @@
+{
+  "name": "practical-analysis",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "build-test-env": "NODE_ENV=test next build"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "@next/font": "13.1.4",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "ag-grid-community": "^29.0.0",
+    "ag-grid-react": "^29.0.0",
+    "@practical/libs": "*",
+    "axios": "^1.2.3",
+    "cookies-next": "^2.1.1",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.4",
+    "highcharts": "^10.3.2",
+    "highcharts-react-official": "^3.1.0",
+    "next": "13.1.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.42.1",
+    "react-i18next": "^12.1.4",
+    "react-loading-skeleton": "^3.2.0",
+    "react-query": "^3.39.2",
+    "webpack": "^5.75.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "babel-loader": "9.1.2",
+    "husky": "^8.0.3",
+    "i18next": "^22.4.9",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "prettier-eslint": "^15.0.1",
+    "stylelint": "^14.0.1",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^4.9.4",
+    "url-loader": "^4.1.1"
+  }
+}

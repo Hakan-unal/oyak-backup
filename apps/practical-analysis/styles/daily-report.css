@@ -1,0 +1,22 @@
+.daily-report-icon {
+  fill: theme(colors.primary.light);
+}
+
+.daily-reports:hover {
+  background-color: #f3797c;
+}
+
+.daily-reports:hover .daily-report-icon {
+  fill: white;
+}
+
+.daily-reports:hover .daily-report-title {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .daily-report-icon {
+    width: 60px;
+    height: 48px;
+  }
+}
