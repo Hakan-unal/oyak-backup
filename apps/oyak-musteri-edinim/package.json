@@ -1,0 +1,107 @@
+{
+  "name": "oyak-me",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev",
+    "precommit": "lint-staged",
+    "lint": "next lint",
+    "typecheck": "tsc",
+    "typecheck:watch": "tsc --watch --showConfig",
+    "prepare": "husky install",
+    "prettier": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "stylelint",
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.6",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@fontsource/roboto": "^4.5.7",
+    "@hookform/resolvers": "^2.9.6",
+    "@tanstack/react-query": "^4.0.10",
+    "@tanstack/react-query-devtools": "^4.0.10",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "axios": "^1.2.3",
+    "chakra-react-select": "^4.3.0",
+    "chakra-ui-steps": "^1.8.0",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.4",
+    "framer-motion": "^6",
+    "iron-session": "^6.1.3",
+    "next": "^12.2.5",
+    "next-intl": "^2.7.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.33.1",
+    "react-pdf": "5.7.2",
+    "request-ip": "^3.3.0",
+    "use-resize-observer": "^9.1.0",
+    "web-vitals": "^2.1.0",
+    "webpack": "^5.75.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.0.5",
+    "@svgr/webpack": "^6.5.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-pdf": "^5.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0",
+    "stylelint": "^14.0.1",
+    "tailwindcss": "^3.2.4",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^4.4.2",
+    "url-loader": "^4.1.1"
+  }
+}
